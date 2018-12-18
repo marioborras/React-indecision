@@ -13,7 +13,6 @@ class Toggle extends React.Component {
                 visibility: !prevState.visibility
             }
         })
-        console.log(this.state.visibility)
     }
     render(){
         return(
