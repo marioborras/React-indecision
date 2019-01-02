@@ -9,11 +9,13 @@
     "@babel/preset-react": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "live-server": "^1.2.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "validator": "^10.10.0",
-    "webpack": "^4.28.1"
+    "webpack": "^4.28.1",
+    "webpack-dev-server": "^3.1.14"
   },
   "devDependencies": {
     "webpack-cli": "^3.1.2"
@@ -21,8 +23,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server public/",
-    "build": "webpack --watch",
-    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
+    "build": "webpack",
+    "dev-server": "webpack-dev-server"
   },
   "author": "Mario Borras",
   "license": "ISC"
