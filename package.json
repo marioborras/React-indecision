@@ -24,13 +24,22 @@
     "webpack-dev-server": "^3.1.14"
   },
   "devDependencies": {
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.2",
+    "prettier": "^1.15.3",
     "webpack-cli": "^3.1.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "lint": "eslint src/components"
   },
   "author": "Mario Borras",
   "license": "ISC"
